@@ -1,0 +1,19 @@
+#ifndef PRODUCER_H
+#define PRODUCER_H
+
+#include <QObject>
+
+class Producer : public QObject
+{
+    Q_OBJECT
+public:
+    explicit Producer(QObject *parent = nullptr);
+
+signals:
+    void Produce(QString Data);
+private:
+    QString Data;
+    QTextStream
+};
+
+#endif // PRODUCER_H
